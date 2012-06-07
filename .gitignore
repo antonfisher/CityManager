@@ -1,6 +1,6 @@
-INSTALL.txt
+ABINSTALL.txt
 LICENSE.txt
 README.txt
 demos/
 extras/documentation
-
+/nbproject/private/
