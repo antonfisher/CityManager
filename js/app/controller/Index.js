@@ -3,7 +3,9 @@ Ext.define('App.controller.Index', {
 
     views: [
         'index.Viewport',
-        'index.AccountPanel'
+        'index.AccountPanel',
+        'index.AddressPanel',
+        'index.ReceiptsPanel'
     ],
 
     stores: [],

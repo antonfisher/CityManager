@@ -16,6 +16,7 @@ Ext.application({
         'Index',
         'widgets.AccountCard',
         'widgets.AccountTabs',
+        'widgets.AddressTree',
         'widgets.Bars'
     ],
 

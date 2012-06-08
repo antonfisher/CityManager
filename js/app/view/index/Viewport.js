@@ -22,10 +22,12 @@ Ext.define('App.view.index.Viewport', {
             items: [
                 {
                     xtype: 'index-AccountPanel'
+                    //xtype: 'index-AddressPanel'
                 },{
-                    html: 'index-AddressPanel'
+                    //xtype: 'index-AccountPanel'
+                    xtype: 'index-AddressPanel'
                 },{
-                    html: 'index-ReceiptsPanel'
+                    xtype: 'index-ReceiptsPanel'
                 }
             ]
         };

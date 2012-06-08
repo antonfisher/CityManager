@@ -93,12 +93,13 @@ Ext.define('App.view.widgets.accountCard.Index', {
                             xtype: 'numberfield',
                             minValue: 0,
                             decimalPrecision: 2,
-                            step: 0.2,
+                            step: 0.1,
                             labelWidth: 120
                         },
                         items: [
                             {
                                 fieldLabel: 'Count rooms',
+                                step: 1,
                                 value: 2
                             },{
                                 fieldLabel: 'Total square (m&sup2;)',
@@ -131,6 +132,21 @@ Ext.define('App.view.widgets.accountCard.Index', {
                                 boxLabel: 'VIP account'
                             },{
                                 boxLabel: 'Account is dangerous'
+                            }
+                        ]
+                    },{
+                        xtype: 'fieldset',
+                        title: 'Operations',
+                        defaults: {
+                            xtype: 'button',
+                            margin: '2 0 2 3'
+                        },
+                        items: [
+                            {
+                                text: 'Print receipt',
+                                handler: function(obj) {
+                                    Ext.Msg.progress('Waiting..', 'Printing..', '0%');
+                                }
                             }
                         ]
                     }
